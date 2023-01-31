@@ -1,0 +1,13 @@
+.item-list-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting {
+    font-size: 30px;
+    width: 400px;
+    color: rgb(99, 99, 99);
+    background-color: rgba(255, 192, 203, 0.705);
+}

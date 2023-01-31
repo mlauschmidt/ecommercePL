@@ -1,0 +1,11 @@
+.contenedor-navbar {
+    max-width: none;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.me-auto {
+    margin-right: 0px !important;
+}
