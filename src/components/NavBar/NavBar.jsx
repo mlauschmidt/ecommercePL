@@ -30,7 +30,6 @@ const NavBar = () => {
                         <Nav.Link href="#link1">SUCURSALES</Nav.Link>
                         <Nav.Link href="#link2">CONTACTO</Nav.Link>
                     </Nav>
-                    
                 </Navbar.Collapse>
                 <CartWidget/>
             </Container>
