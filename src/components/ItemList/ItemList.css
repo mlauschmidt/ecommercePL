@@ -1,0 +1,7 @@
+.card-row{
+    justify-content: space-between;
+}
+
+.card-col {
+    padding: 12px;
+}

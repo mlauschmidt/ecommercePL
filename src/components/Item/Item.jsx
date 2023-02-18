@@ -1,14 +1,18 @@
 import './Item.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const Item = ({ id, title, description, price, pictureUrl }) => {
+const Item = ({ title, description, price, pictureUrl }) => {
     return (
-        <div className='item'>
-            <p>{id}</p>
-            <p>{title}</p>
-            <p>{description}</p>
-            <p>{price}</p>
-            <p>{pictureUrl}</p>
-        </div>
+        <Card style={{ width: '15rem'}}>
+            <Card.Img variant="top" src={pictureUrl} />
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{price}</Card.Text>
+                {/* <Card.Text>{description}</Card.Text> */}
+                <Button variant="primary">COMPRAR</Button>
+            </Card.Body>
+        </Card>
     );
 }
 

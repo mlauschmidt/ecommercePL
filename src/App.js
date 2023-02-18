@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer greeting='Bienvenid@ a la Tienda Online de Piedra Libre'/>
+      <ItemListContainer/>
     </div>
   );
 }
