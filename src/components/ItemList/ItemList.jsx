@@ -4,14 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const ItemList = ({listado}) => {
+const ItemList = ({list}) => {
     return (
         <Container fluid>
             <Row md="auto" className='card-row'>
-                {listado.map((prod) => (
-                    <Col className='card-col'>
+                {list.map((prod) => (
+                    <Col className='card-col' key={prod.id}>
                         <Item
-                            key={prod.id}
                             id= {prod.id}
                             title= {prod.title}
                             description= {prod.description}
