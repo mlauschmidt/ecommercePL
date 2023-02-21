@@ -9,3 +9,7 @@
 .me-auto {
     margin-right: 0px !important;
 }
+
+.nav-link {
+    text-decoration: none;
+}

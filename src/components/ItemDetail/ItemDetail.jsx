@@ -6,17 +6,15 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 const ItemDetail = ({details}) => {
-    console.log(details);
-
     return (
         <Container className='detail-container' fluid>
-            <Row md="auto" className='detail-modal-row'>
-                <Col>
+            <Row md="auto" className='detail-row'>
+                <Col className='detail-col-img'>
                     <Card>
                         <Card.Img variant="top" src={details.pictureUrl} />
                     </Card>  
                 </Col>
-                <Col>
+                <Col className='detail-col-description'>
                     <Card>
                         <Card.Body>
                             <Card.Title>{details.title}</Card.Title>

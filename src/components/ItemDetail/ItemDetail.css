@@ -1,4 +1,17 @@
-.detail-modal-row {
-    display: grid;
-    grid-template-columns: 4fr 8fr;
+.detail-container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-col-img {
+    width: 20rem;
+}
+
+.detail-col-description {
+    width: 35rem;
+}
+
+.card {
+    height: 100%;
 }

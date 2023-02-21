@@ -1,7 +1,17 @@
 .card-row{
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card-col {
-    padding: 12px;
+    margin: 12px;
+    padding: 0px;
+}
+
+.item-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.item-link:hover {
+    color: rgba(0, 0, 0, 0.7);
 }

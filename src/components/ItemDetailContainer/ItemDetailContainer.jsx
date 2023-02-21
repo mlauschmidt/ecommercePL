@@ -2,8 +2,9 @@ import './ItemDetailContainer.css';
 import { useEffect, useState } from "react";
 import { mockedProducts } from "../../utils/products.js";
 import ItemDetail from '../ItemDetail/ItemDetail';
+import { useParams } from 'react-router';
 
-const ItemDetailContainer = ({ prod }) => {
+const ItemDetailContainer = () => {
     const fetchCopy = (item) => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
@@ -14,9 +15,11 @@ const ItemDetailContainer = ({ prod }) => {
 
     const [product, setProduct] = useState([]);
 
+    let { id } = useParams();
+
     useEffect(() => {
-        fetchCopy(mockedProducts[prod-1]).then((result) => setProduct(result));
-    }, [prod]);
+        fetchCopy(mockedProducts[id-1]).then((result) => setProduct(result));
+    }, [id]);
 
     return (
         <div className='item-detail-container'>
