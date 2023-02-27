@@ -1,4 +1,3 @@
-import './DetalleProducto.css';
 import ItemDetailContainer from "../../components/ItemDetailContainer/ItemDetailContainer";
 
 const DetalleProducto = () => {

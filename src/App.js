@@ -8,19 +8,23 @@ import Sucursales from './pages/Sucursales/Sucursales';
 import Contacto from './pages/Contacto/Contacto';
 import DetalleProducto from './pages/DetalleProducto/DetalleProducto';
 import CategoriaProductos from './pages/CategoriaProductos/CategoriaProductos';
+import SearchBar from './components/SearchBar/SearchBar';
+import BusquedaProductos from './pages/BusquedaProductos/BusquedaProductos';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
+        <SearchBar/>
         <NavBar/>
         <Routes>
           <Route path='/' element={<Inicio/>} />
           <Route path='/productos' element={<Productos/>} />
           <Route path='/sucursales' element={<Sucursales/>} />
           <Route path='/contacto' element={<Contacto/>} />
-          <Route path='/producto/:id' element={<DetalleProducto/>} />
+          <Route path='/productos/:prodName' element={<DetalleProducto/>} />
           <Route path='/categoria/:category' element={<CategoriaProductos/>} />
+          <Route path='/search/:product' element={<BusquedaProductos/>} />
         </Routes>
       </div>
     </BrowserRouter>

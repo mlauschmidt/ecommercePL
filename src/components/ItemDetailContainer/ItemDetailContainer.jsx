@@ -15,15 +15,15 @@ const ItemDetailContainer = () => {
 
     const [product, setProduct] = useState([]);
 
-    let { id } = useParams();
+    let { prodName } = useParams();
 
     useEffect(() => {
-        fetchCopy(mockedProducts[id-1]).then((result) => setProduct(result));
-    }, [id]);
+        fetchCopy(mockedProducts.find(prod => prod.title.toLowerCase().replace(/ /g, "-") === prodName)).then((result) => setProduct(result));
+    }, [prodName]);
 
     return (
         <div className='item-detail-container'>
-            <ItemDetail details={product}/>
+            {product.id ? <ItemDetail details={product}/> : null}
         </div>
     );
 }

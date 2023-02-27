@@ -29,10 +29,10 @@ const NavBar = () => {
                             </NavDropdown.Item>    
                             <NavDropdown.Divider /> 
                             <NavDropdown.Item>
-                                <Link to={`/categoria/Camperas`} className='nav-link'>CAMPERAS</Link> 
+                                <Link to={`/categoria/camperas`} className='nav-link'>CAMPERAS</Link> 
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link to={`/categoria/Jeans`} className='nav-link'>JEANS</Link>  
+                                <Link to={`/categoria/jeans`} className='nav-link'>JEANS</Link>  
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Link to='/sucursales' className='nav-link'>SUCURSALES</Link>
