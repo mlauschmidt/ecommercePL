@@ -18,6 +18,8 @@ const ItemList = ({list}) => {
                                 description= {prod.description}
                                 price= {prod.price}
                                 pictureUrl= {prod.pictureUrl}
+                                category= {prod.category}
+                                stock= {prod.stock}
                             />
                         </Link>
                     </Col>                            

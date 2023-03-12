@@ -1,0 +1,22 @@
+.count-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-qty {
+    width: 3rem;
+    padding: 0.375rem;
+    margin: 5px;
+    border: solid black 1px;
+    border-radius: 0.375rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-button {
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}

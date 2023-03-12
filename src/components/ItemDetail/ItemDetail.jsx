@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import ItemCount from '../ItemCount/ItemCount';
 
 const ItemDetail = ({details}) => {
     return (
@@ -20,9 +20,7 @@ const ItemDetail = ({details}) => {
                             <Card.Title>{details.title}</Card.Title>
                             <Card.Text>{details.description}</Card.Text>
                             <Card.Text>{details.price}</Card.Text>
-                            <Button variant="secondary">
-                                COMPRAR
-                            </Button>
+                            <ItemCount prod={details} initial={1}/>
                         </Card.Body>
                     </Card>  
                 </Col>

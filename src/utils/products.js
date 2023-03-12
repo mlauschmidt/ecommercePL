@@ -6,6 +6,7 @@ export const mockedProducts = [
       price: "$17.999,00",
       pictureUrl: "https://d3ugyf2ht6aenh.cloudfront.net/stores/305/632/products/_dsc86141-83d1300dc3ffe5f31516763952942142-320-0.jpg",
       category: "camperas",
+      stock: 5,
     },
     {
       id: "2",
@@ -14,6 +15,7 @@ export const mockedProducts = [
       price: "$15.999,00",
       pictureUrl: "https://d3ugyf2ht6aenh.cloudfront.net/stores/305/632/products/_dsc86011-965bdeb7f506b30ef116763954158911-480-0.jpg",
       category: "camperas",
+      stock: 3,
     },
     {
       id: "3",
@@ -22,6 +24,7 @@ export const mockedProducts = [
       price: "$13.999,00",
       pictureUrl: "https://d3ugyf2ht6aenh.cloudfront.net/stores/305/632/products/_dsc86311-06cc0e13ca41f5d58016763959475746-480-0.jpg",
       category: "camperas",
+      stock: 1,
     },
     {
       id: "4",
@@ -30,6 +33,7 @@ export const mockedProducts = [
       price: "$8.499,00",
       pictureUrl: "https://d3ugyf2ht6aenh.cloudfront.net/stores/305/632/products/_dsc877811-ac21457ab6d5356b0016760355610855-480-0.jpg",
       category: "jeans",
+      stock: 0,
     },
     {
       id: "5",
@@ -38,6 +42,7 @@ export const mockedProducts = [
       price: "$8.999,00",
       pictureUrl: "https://d3ugyf2ht6aenh.cloudfront.net/stores/305/632/products/_dsc874011-3b7ce7b0ad899c4b0416760347325684-480-0.jpg",
       category: "jeans",
+      stock: 2,
     },
     {
       id: "6",
@@ -46,5 +51,6 @@ export const mockedProducts = [
       price: "$8.999,00",
       pictureUrl: "https://d3ugyf2ht6aenh.cloudfront.net/stores/305/632/products/_dsc88361-7c515310a3873eea0f16757733111701-480-0.jpg",
       category: "jeans",
+      stock: 4,
     },
   ];

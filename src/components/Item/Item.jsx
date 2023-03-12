@@ -1,7 +1,7 @@
 import './Item.css';
 import Card from 'react-bootstrap/Card';
 
-const Item = ({ id, title, price, pictureUrl }) => {  
+const Item = ({ title, price, pictureUrl }) => {  
     return (
         <Card>
             <Card.Img variant="top" src={pictureUrl}/>

@@ -22,7 +22,7 @@ const ItemSearchContainer = () => {
     }, [product]);
 
     return (
-        <div className="busqueda-productos">
+        <div className='item-search-container'>
             {products.length === 1 ? <ItemDetail details={products[0]}/> : <ItemList list={products}/>}
         </div>
     );

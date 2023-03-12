@@ -27,7 +27,7 @@ const SearchBar = () => {
             onChange={onChange}
             />
             <Link to={`/search/${value.toLowerCase().replace(/ /g, "-")}`} className='search-link'>
-                <Button variant="outline-secondary" type="submit">
+                <Button variant="outline-secondary" type="submit" className='btn-search'>
                     <FaSearch/>
                 </Button> 
             </Link>

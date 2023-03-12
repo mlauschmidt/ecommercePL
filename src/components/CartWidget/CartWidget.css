@@ -1,4 +1,4 @@
-.contenedor-carrito {
+.cart-container {
     width: 80px;
     height: 80px;
     margin: 10px;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.icono-carrito {
+.cart-icon {
     width: 62.5%;
     height: auto;
     position: absolute;

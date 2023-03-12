@@ -22,7 +22,7 @@ const ItemCategoryContainer = () => {
     }, [category]);
 
     return (
-        <div className='item-detail-container'>
+        <div className='item-category-container'>
             <ItemList list={products}/>
         </div>
     );

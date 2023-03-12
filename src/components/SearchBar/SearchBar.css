@@ -8,7 +8,7 @@
     width: 30%;
 }
 
-.btn {
+.btn-search {
     --bs-btn-color: white;
     --bs-btn-bg: #6c757d;
     display: flex;
