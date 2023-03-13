@@ -11,6 +11,7 @@ import CategoriaProductos from './pages/CategoriaProductos/CategoriaProductos';
 import SearchBar from './components/SearchBar/SearchBar';
 import BusquedaProductos from './pages/BusquedaProductos/BusquedaProductos';
 import CountProvider from './context/CartContext/CartContext';
+import CarritoDeCompras from './pages/CarritoDeCompras/CarritoDeCompras';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
             <Route path='/productos/:prodName' element={<DetalleProducto/>} />
             <Route path='/categoria/:category' element={<CategoriaProductos/>} />
             <Route path='/search/:product' element={<BusquedaProductos/>} />
+            <Route path='/carrito' element={<CarritoDeCompras/>} />
           </Routes>
         </div>
       </BrowserRouter>
