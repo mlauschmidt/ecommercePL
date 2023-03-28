@@ -16,7 +16,7 @@ const ItemList = ({list}) => {
                                 id= {prod.id}
                                 title= {prod.title}
                                 description= {prod.description}
-                                price= {prod.price}
+                                price= {`$${prod.price}`}
                                 pictureUrl= {prod.pictureUrl}
                                 category= {prod.category}
                                 stock= {prod.stock}

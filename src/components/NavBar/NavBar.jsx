@@ -29,6 +29,12 @@ const NavBar = () => {
                             </NavDropdown.Item>    
                             <NavDropdown.Divider /> 
                             <NavDropdown.Item>
+                                <Link to={`/categoria/remeras`} className='nav-link'>REMERAS</Link>  
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link to={`/categoria/sweaters`} className='nav-link'>SWEATERS</Link>  
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
                                 <Link to={`/categoria/camperas`} className='nav-link'>CAMPERAS</Link> 
                             </NavDropdown.Item>
                             <NavDropdown.Item>

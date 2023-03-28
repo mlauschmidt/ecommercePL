@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import ItemCount from '../ItemCount/ItemCount';
+import ButtonComprar from '../ButtonComprar/ButtonComprar';
 
 const ItemDetail = ({details}) => {
     return (
@@ -19,8 +20,9 @@ const ItemDetail = ({details}) => {
                         <Card.Body>
                             <Card.Title>{details.title}</Card.Title>
                             <Card.Text>{details.description}</Card.Text>
-                            <Card.Text>{details.price}</Card.Text>
-                            <ItemCount prod={details} initial={1}/>
+                            <Card.Text>{`$${details.price}`}</Card.Text>
+                            <ItemCount prod={details}/>
+                            <ButtonComprar prod={details}/>
                         </Card.Body>
                     </Card>  
                 </Col>
