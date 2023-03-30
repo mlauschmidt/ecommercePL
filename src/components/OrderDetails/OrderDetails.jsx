@@ -49,7 +49,6 @@ const OrderDetails = ({prods, total}) => {
             const docRef = await addDoc(collection(db, "orders"), {
                 values,                 
             });
-            console.log("Orden de compra número:", docRef.id);
             setOrderID(docRef.id);  
         }
         setValidated(true);
