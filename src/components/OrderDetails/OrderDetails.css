@@ -1,0 +1,25 @@
+.order-details {
+    display: flex;
+    justify-content: center;
+}
+
+.input-finalizar {
+    width: 100%;
+    margin: 20px;
+}
+
+.form-check {
+    display: flex;
+    justify-content: center;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.btn-finalizar-compra {
+    width: 150px;
+    font-size: 13px;
+    background-color: rgba(91, 167, 180, 0.842);
+    border: 1px solid rgba(91, 167, 180, 0.842);
+}

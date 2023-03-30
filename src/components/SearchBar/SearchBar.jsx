@@ -21,7 +21,7 @@ const SearchBar = () => {
             <Form.Control
             type="search"
             placeholder="Buscar"
-            className="me-2"
+            className="me-2 form-control-search"
             aria-label="Search"
             value={value}
             onChange={onChange}

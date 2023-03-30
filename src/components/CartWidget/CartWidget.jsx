@@ -10,7 +10,6 @@ const CartWidget = () => {
     if (products.length > 0) {   
         widgetQty = products.map (prod => prod.quantity).reduce ((a, b) => a + b);
     };
-    console.log(widgetQty);
 
     const handleOnClick = () => {
         calculateSubtotal();

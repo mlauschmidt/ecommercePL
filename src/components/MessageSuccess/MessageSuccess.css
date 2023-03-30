@@ -1,0 +1,10 @@
+.volver-inicio-link{
+    text-decoration: none;
+}
+
+.btn-volver-inicio {
+    width: 140px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}

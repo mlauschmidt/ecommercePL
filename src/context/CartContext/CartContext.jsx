@@ -13,8 +13,8 @@ const CountProvider = ({children}) => {
     }
 
     const addItem = (prodAdded, qtyAdded) => {
-        let isInCart = products.indexOf(prodAdded);
-        if (isInCart === -1) {
+        let isInCart = products.includes(prodAdded);
+        if (isInCart === false) {
             prodAdded.quantity = qtyAdded;
             setProducts([...products, prodAdded]);
         } else {
@@ -26,7 +26,6 @@ const CountProvider = ({children}) => {
         products.forEach ((prod) => {
             let prodSubtotal = prod.quantity * prod.price;
             prod.subtotal = prodSubtotal;
-            console.log(prodSubtotal);
         });
     }
 

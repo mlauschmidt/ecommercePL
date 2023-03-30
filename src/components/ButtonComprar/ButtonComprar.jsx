@@ -8,7 +8,7 @@ const ButtonComprar = ({prod}) => {
 
     useEffect(() => {
         setQty(1);
-    }, []);
+    }, [setQty]);
 
     return (
         <div className="button-comprar-container">

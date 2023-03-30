@@ -11,7 +11,7 @@ const ItemList = ({list}) => {
             <Row xs={3} md={5} className='card-row'>
                 {list.map((prod) => (
                     <Col className='card-col' key={prod.id}>
-                        <Link to={`/productos/${prod.title.toLowerCase().replace(/ /g, "-")}`} className='item-link'>
+                        <Link to={`/productos/${prod.id}`} className='item-link'>
                             <Item
                                 id= {prod.id}
                                 title= {prod.title}

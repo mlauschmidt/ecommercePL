@@ -1,32 +1,46 @@
 import './ItemDetailContainer.css';
 import { useEffect, useState } from "react";
-import { mockedProducts } from "../../utils/products.js";
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router';
+import { db } from "../../firebase/firebaseConfig";
+import { collection, query, getDocs, where, documentId } from "firebase/firestore";
+import Spinner from 'react-bootstrap/Spinner';
+
 
 const ItemDetailContainer = () => {
-    const fetchCopy = (item) => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(item);
-            }, 2000);
-        });
-    };
-
     const [product, setProduct] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
-    let { prodName } = useParams();
+    let { id } = useParams(); 
 
     useEffect(() => {
-        fetchCopy(mockedProducts.find(prod => prod.title.toLowerCase().replace(/ /g, "-") === prodName)).then((result) => setProduct(result));
-    }, [prodName]);
+        setIsLoading(true);
+        const getProduct = async () => {
+            const q = query(collection(db, "productos"), where(documentId(), "==", id));
+            const querySnapshot = await getDocs(q);
+            querySnapshot.forEach((doc) => {
+                setProduct({...doc.data(), id: doc.id});
+            });
+        };
+        getProduct();
+        setTimeout(() => {
+        setIsLoading(false);
+        }, 1000);
+    }, [id]);
 
     return (
-        <div className='item-detail-container'>
-            {product.id ? <ItemDetail details={product}/> : null}
-        </div>
+        <>
+            {isLoading ? (
+                <div className='item-detail-spinner'>
+                    <Spinner animation="border" />
+                </div>
+            ) : (
+                <div className='item-detail-container'>
+                    {product.id ? <ItemDetail details={product}/> : null}
+                </div>
+            )}
+        </>
     );
 }
 
 export default ItemDetailContainer;
-

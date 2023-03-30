@@ -42,11 +42,6 @@
     justify-content: center;
 }
 
-.btns-checkout {
-    display: flex;
-    justify-content: center;
-}
-
 .btn-continuar-comprando {
     width: 205px;
     font-size: 13px;
@@ -65,12 +60,27 @@
     align-items: center;
 }
 
-.btn-finalizar-compra {
-    width: 165px;
-    font-size: 13px;
-    background-color: rgba(91, 167, 180, 0.842);
-    border: 1px solid rgba(91, 167, 180, 0.842);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.continuar-comprando-link {
+    text-decoration: none;
+}
+
+.checkout-link {
+    text-decoration: none;
+}
+
+.row{
+    margin: 15px;
+}
+
+.col-cart-container {
+    padding: 0px;
+}
+
+.col-order-details {
+    min-height: 300px;
+    padding: 0px;
+}
+
+.table {
+    --bs-table-striped-bg: none;
 }
